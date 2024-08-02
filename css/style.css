@@ -1,0 +1,166 @@
+body {
+	font-family: sans-serif;
+}
+
+body,
+section,
+article {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+
+footer {
+	text-align: center;
+	font-size: smaller;
+}
+
+ol {
+	padding-left: 1em;
+}
+
+ul {
+	padding-left: 1.4em;
+}
+
+li {
+	clear: both;
+}
+
+li+li {
+	margin-top: .5em;
+}
+
+.in-list-pic {
+	margin-left: -1.4em;
+	margin-right: .5em;
+	float: left;
+}
+
+.main {
+	padding-top: 5em;
+	background: white;
+}
+
+.no-columns {
+	margin-bottom: 10px;
+}
+
+.signature {
+	text-align: right;
+	font-style: italic;
+}
+
+/* box decoration rules */
+
+.columns {
+	&>* {
+		margin: 7px 0;
+		padding: 0;
+	}
+}
+
+.block {
+	border-radius: 1em;
+	padding: 10px;
+}
+
+.blue {
+	background-color: aliceblue;
+}
+
+.green {
+	background-color: hsl(115, 85%, 80%);
+}
+
+.orange {
+	background-color: hsl(46, 85%, 80%);
+}
+
+.neutral {
+	background-color: transparent;
+}
+
+
+
+/* picframe rules*/
+
+img {
+	vertical-align: bottom;
+}
+
+.picframe {
+	position: relative;
+}
+
+.picframe>img {
+	width: 100%;
+}
+
+.picframe>.caption {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: .3em;
+	overflow: hidden;
+	color: white;
+	background: hsla(0, 0%, 0%, .4);
+	/* color: transparent; */
+	/* background: transparent; */
+	transition: 1s;
+	box-sizing: border-box;
+}
+
+.picframe:hover>.caption {
+	/* transition: .3s; */
+	color: white;
+	background: hsla(0, 0%, 0%, .4);
+}
+
+
+/* blockquote rules */
+
+blockquote,
+q {
+	font-size: 1.6em;
+	font-family: serif;
+	font-style: italic;
+}
+
+blockquote {
+	text-align: center;
+}
+
+blockquote:before {
+	color: #555;
+	content: open-quote;
+	font-size: 3em;
+	line-height: 0;
+	vertical-align: -0.4em;
+}
+
+blockquote:after {
+	color: #555;
+	content: close-quote;
+	font-size: 3em;
+	line-height: 0;
+	vertical-align: -0.4em;
+}
+
+pre.code,
+pre.csv,
+pre.fixed {
+	padding: 1em;
+	background: #eee;
+	border: thin solid lightgray;
+}

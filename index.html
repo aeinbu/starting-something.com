@@ -16,11 +16,47 @@
 			<h1>
 				Welcome to
 				<br>
-				<i>Starting Something&trade;</i>
+				<i>Starting Something</i>&trade;
 			</h1>
-			<p>
-				I want this site to be a resource for starting something on the web.
-			</p>
+			<article class="block blue">
+				<p>
+					It should be easy to make my software service available to others. It's really easy if I can make my
+					service public, and all data is shared between all users.
+				</p>
+				<p>
+					But if I want to distinguish one user from one another, and perhaps I even need to know who they
+					are. I
+					could use an authentication mechanism.
+				</p>
+				<p>
+					I will probably want to allow for administrative access, perhaps on multiple levels. The System
+					Administrator should control system wide settings and have access to system wide report, while a
+					Tenant Admininistrator should have tenant wide control. There could be a need for even more roles.
+				</p>
+				<p>
+					Authentication will take me half way there. I will also need to handle <i>authorization</i> or
+					<i>access control</i>. Ie. who can do what and who has access to what resources.
+				</p>
+				<p>
+					It should be easy let people pay me for using my software. Of course, making people <i>want</i> to
+					pay isn't always easy, but at least it shouldn't be a technical problem. How can I utilize a payment
+					provider?
+				</p>
+				<p>
+					There are more things to take care of. How do we handle logging and monitoring? Displaying
+					dashboards and reports about our infrastructure, etc.
+				</p>
+				<p>
+					It turns out it is not so easy after all...
+				</p>
+			</article>
+
+			<article>
+				<blockquote>
+					All the boring technical stuff before launching a product
+				</blockquote>
+			</article>
+
 		</section>
 
 		<section class="columns">
@@ -28,14 +64,14 @@
 			<article class="block blue">
 				<h2>What do I need to start a business on the web?</h2>
 				<ul>
-					<li>Authentication</li>
+					<li><a href="authentication.html">Authentication</a></li>
 					<li>Authorization, ACLs</li>
 					<li>Payments</li>
-					<li>Content management</li>
 					<li>Handling different tiers configurations or SKUs</li>
+					<li>Content management</li>
 					<li>System-admin, tenant admin</li>
 					<li>System metrics and dashboards</li>
-					<li>Certificates</li>
+					<li><a href="certificates.html">Certificates</a></li>
 				</ul>
 			</article>
 
@@ -46,9 +82,11 @@
 						A turnkey solution for "all the boring technical stuff before launching a product"
 					</li>
 					<li>
-						An oppinionated starter kit that sets up everything I need from well tried components.
+						An opinionated starter kit that sets up everything I need from well tried components.
 						<br />
-						Some suggested components are Kubernetes, Lets Encrypt, OpenID Connect, Keycloak, KrakenD, Seq,
+						Some suggested components are <a href="kubernetes.html">Kubernetes</a>, <a
+							href="certificates.html">Lets Encrypt</a>, <a href="authentication.html">OpenID Connect</a>,
+						<a href="authentication.html">Keycloak</a>, KrakenD, Seq,
 						Prometheus, Graphana etc.
 					</li>
 				</ul>
@@ -78,7 +116,7 @@
 
 			<article class="block orange">
 				<h2>
-					It should not be oppinionated about development tools, languages and frameworks that I can use
+					It should not be opinionated about development tools, languages and frameworks that I can use
 				</h2>
 			</article>
 
@@ -87,14 +125,14 @@
 					Undecided
 				</h2>
 				<p>
-					Should it be oppinionated about deployment, or different environments (like local, test, production
+					Should it be opinionated about deployment, or different environments (like local, test, production
 					etc.)
 				</p>
 			</article>
 
 			<article class="block blue">
 				<h2>
-					Call for acion
+					Call to action
 				</h2>
 				<p>Would you like to participate in this project?</p>
 				<p>

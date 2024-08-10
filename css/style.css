@@ -16,9 +16,18 @@ h2 {
 	margin-bottom: 0;
 }
 
-h1 {
+header.top-header {
 	text-align: center;
-	font-size: 3em;
+
+	&>h1 {
+		font-size: 3em;
+		margin-bottom: .5em;
+	}
+
+	&>h2 {
+		font-size: 1.5em;
+		margin-bottom: .5em;
+	}
 }
 
 
@@ -100,6 +109,13 @@ li+li {
 	background-color: transparent;
 }
 
+/* .block {
+	transition: 1s;
+}
+.block:hover {
+	transition: 1s;
+	transform: matrix(-1, 0,0,-1,0,0);
+} */
 
 
 /* picframe rules*/
